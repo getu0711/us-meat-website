@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&K Meats | The Gold Standard of USDA Butchery</title>
+    <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -69,6 +71,9 @@
         .footer-link:hover { color: var(--gold); }
 
         .call-btn { position: fixed; bottom: 30px; right: 30px; background: var(--gold); color: black; padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; z-index: 100; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        
+        /* Map Styling */
+        .map-wrapper { width: 100%; margin-top: 40px; border: 1px solid var(--gold); padding: 5px; filter: grayscale(1) invert(1); }
     </style>
 </head>
 <body>
@@ -78,7 +83,7 @@
     <nav>
         <a href="#history">Heritage</a>
         <a href="#collection">Collection</a>
-        <a href="#inquiry">Wholesale</a>
+        <a href="#inquiry">Inquiry</a>
     </nav>
 </header>
 
@@ -106,8 +111,8 @@
 
 <section class="section" id="inquiry">
     <div class="form-container">
-        <h2 style="text-align: center; margin-bottom: 20px; color: var(--gold);">Wholesale & Shipping</h2>
-        <p style="text-align: center; font-size: 12px; margin-bottom: 30px; opacity: 0.7;">INQUIRE FOR LOCAL PICKUP OR NATIONWIDE DELIVERY</p>
+        <h2 style="text-align: center; margin-bottom: 20px; color: var(--gold);">Order Inquiry</h2>
+        <p style="text-align: center; font-size: 12px; margin-bottom: 30px; opacity: 0.7;">LOCAL PICKUP OR NATIONWIDE SHIPPING</p>
         
         <form action="https://formspree.io/f/endaledinnsa32@gmail.com" method="POST">
             <input type="hidden" name="_next" value="https://bkmeatsdecatur.com/thankyou.html">
@@ -131,9 +136,17 @@
 </section>
 
 <footer>
-    <p style="color: var(--gold); margin-bottom: 10px; letter-spacing: 2px;">4604 MEMORIAL DRIVE, DECATUR, GA 30032</p>
+    <h3 style="color: var(--gold); margin-bottom: 20px;">VISIT OUR SHOP</h3>
+    <p style="letter-spacing: 2px;">4604 MEMORIAL DRIVE, DECATUR, GA 30032</p>
     <p><a href="tel:4046424424" class="footer-link">404.642.4424</a>  |  <a href="tel:4042965116" class="footer-link">404.296.5116</a></p>
     <p><a href="mailto:endaledinnsa32@gmail.com" class="footer-link">endaledinnsa32@gmail.com</a></p>
+
+    <div class="map-wrapper">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.842753386616!2d-84.24927232341492!3d33.74312897327341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5062a4d048493%3A0xc3f8e5d0f66e06b3!2s4604%20Memorial%20Dr%2C%20Decatur%2C%20GA%2030032!5e0!3m2!1sen!2sus!4v1709600000000!5m2!1sen!2sus" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
     <p style="margin-top: 40px; opacity: 0.3; font-size: 10px;">© 2026 B&K MEATS. ALL RIGHTS RESERVED.</p>
 </footer>
 
