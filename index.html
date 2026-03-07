@@ -8,7 +8,6 @@
     <meta name="google-site-verification" content="21_H-7H7gfEf51Uahqwkmm75-Crub3bjQrRPdYa9j-U" />
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <style>
         :root { --gold: #D4AF37; --onyx: #2a2a2a; --dark-box: #333333; --white: #ffffff; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,29 +18,10 @@
         .logo-text { font-size: 28px; font-weight: 700; color: var(--gold); text-decoration: none; }
         nav a { color: var(--white); text-decoration: none; margin-left: 30px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
 
-        /* HERO SECTION */
         .hero { 
-            height: 80vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            margin-top: 80px; 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.jpg') no-repeat center center; 
-            background-size: contain; 
-        }
-
-        /* RESPONSIVE HERO TEXT */
-        .hero h1 { 
-            color: var(--gold); 
-            font-size: clamp(35px, 8vw, 70px); 
-        }
-        .hero p { 
-            color: var(--gold); 
-            letter-spacing: 5px; 
-            font-weight: bold; 
-            margin-top: 10px; 
+            height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/logo.png') center/contain no-repeat; 
+            text-align: center; margin-top: 80px; 
         }
 
         .section { padding: 60px 10%; }
@@ -59,17 +39,6 @@
         .map-container { width: 100%; max-width: 900px; margin: 40px auto; border: 3px solid var(--gold); background: #fff; padding: 5px; height: 460px; }
         footer { padding: 60px 10%; background: #1a1a1a; text-align: center; border-top: 1px solid var(--gold); }
         .call-btn { position: fixed; bottom: 20px; right: 20px; background: var(--gold); color: black; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-
-        /* RESPONSIVE ADJUSTMENTS */
-        @media (max-width: 768px) {
-            .hero { height: 70vh; background-size: contain; }
-            .product-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 480px) {
-            header { padding: 15px 5%; }
-            nav a { margin-left: 15px; font-size: 10px; }
-            .hero { height: 60vh; background-size: contain; }
-        }
     </style>
 </head>
 <body>
@@ -84,8 +53,8 @@
 </header>
 
 <section class="hero">
-    <h1>The Gold Standard</h1>
-    <p>USDA CERTIFIED BUTCHERY</p>
+    <h1 style="color:var(--gold); font-size: clamp(35px, 8vw, 70px);">The Gold Standard</h1>
+    <p style="color: var(--gold); letter-spacing: 5px; font-weight: bold; margin-top: 10px;">USDA CERTIFIED BUTCHERY</p>
 </section>
 
 <section class="section" id="history">
