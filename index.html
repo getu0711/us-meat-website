@@ -78,17 +78,19 @@
 <section class="section" id="inquiry">
     <div class="form-container">
         <h2 style="text-align: center; margin-bottom: 40px; color: var(--gold);">Order Inquiry</h2>
+        
         <form action="https://formspree.io/f/endaledinssa32@gmail.com" method="POST">
-            <div class="product-grid">
-                <label class="check-item"><input type="checkbox" name="Product" value="Oxtail"> Oxtail</label>
-                <label class="check-item"><input type="checkbox" name="Product" value="Goat"> Goat</label>
-                <label class="check-item"><input type="checkbox" name="Product" value="Lamb"> Lamb</label>
-                <label class="check-item"><input type="checkbox" name="Product" value="Beef"> Beef</label>
-                <label class="check-item"><input type="checkbox" name="Product" value="Mutton"> Mutton</label>
-                <label class="check-item"><input type="checkbox" name="Product" value="Red Snapper"> Red Snapper</label>
-            </div>
             
-            <input type="hidden" name="_subject" value="New Meat Quote Request">
+            <div class="product-grid">
+                <label class="check-item"><input type="checkbox" name="Oxtail" value="Requested"> Oxtail</label>
+                <label class="check-item"><input type="checkbox" name="Goat" value="Requested"> Goat</label>
+                <label class="check-item"><input type="checkbox" name="Lamb" value="Requested"> Lamb</label>
+                <label class="check-item"><input type="checkbox" name="Beef" value="Requested"> Beef</label>
+                <label class="check-item"><input type="checkbox" name="Mutton" value="Requested"> Mutton</label>
+                <label class="check-item"><input type="checkbox" name="Red Snapper" value="Requested"> Red Snapper</label>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Order Inquiry from Website">
             
             <button type="submit" class="submit-btn">REQUEST PRIVATE QUOTE</button>
         </form>
