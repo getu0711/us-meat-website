@@ -16,7 +16,6 @@
         .logo-text { font-size: 28px; font-weight: 700; color: var(--gold); text-decoration: none; }
         nav a { color: var(--white); text-decoration: none; margin-left: 30px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
 
-        /* FIXED: Removed 'images/' from the URL */
         .hero { 
             height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; 
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('logo.png') center/contain no-repeat; 
@@ -35,6 +34,7 @@
         .check-item input { width: 20px; height: 20px; accent-color: var(--gold); }
 
         .submit-btn { background: var(--gold); color: black; padding: 20px; border: none; font-family: 'Cinzel'; font-weight: 700; width: 100%; cursor: pointer; margin-top: 20px; }
+        .map-container { width: 100%; max-width: 900px; margin: 40px auto; border: 3px solid var(--gold); background: #fff; padding: 5px; height: 460px; }
         footer { padding: 60px 10%; background: #1a1a1a; text-align: center; border-top: 1px solid var(--gold); }
         .call-btn { position: fixed; bottom: 20px; right: 20px; background: var(--gold); color: black; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
     </style>
@@ -58,7 +58,7 @@
 <section class="section" id="history">
     <h2 style="text-align: center; color: var(--gold); margin-bottom: 30px;">Our Heritage</h2>
     <div class="heritage-text">
-        Since 2012, <strong>B & K Meats</strong> has been the gold standard for premium meats in Decatur, GA.
+        Since 2012, <strong>B & K Meats</strong> has been the gold standard for premium meats in Decatur, GA. We provide nationwide delivery, bringing the finest cuts directly to your doorstep.
     </div>
 </section>
 
@@ -67,7 +67,7 @@
     <div class="grid">
         <div class="card"><img src="logo.png"><h3>Select Oxtail</h3></div>
         <div class="card"><img src="logo2.png"><h3>USDA Beef</h3></div>
-        <div class="card"><img src="images/logo3.png"><h3>Lamb & Mutton</h3></div>
+        <div class="card"><img src="logo3.png"><h3>Lamb & Mutton</h3></div>
     </div>
 </section>
 
@@ -77,8 +77,11 @@
         <form action="https://formspree.io/f/endaledinssa32@gmail.com" method="POST">
             <div class="product-grid">
                 <label class="check-item"><input type="checkbox" name="meat" value="Oxtail"> Oxtail</label>
-                <label class="check-item"><input type="checkbox" name="meat" value="Beef"> Beef</label>
+                <label class="check-item"><input type="checkbox" name="meat" value="Goat"> Goat</label>
                 <label class="check-item"><input type="checkbox" name="meat" value="Lamb"> Lamb</label>
+                <label class="check-item"><input type="checkbox" name="meat" value="Beef"> Beef</label>
+                <label class="check-item"><input type="checkbox" name="meat" value="Mutton"> Mutton</label>
+                <label class="check-item"><input type="checkbox" name="meat" value="Red Snapper"> Red Snapper</label>
             </div>
             <button type="submit" class="submit-btn">REQUEST PRIVATE QUOTE</button>
         </form>
@@ -86,7 +89,17 @@
 </section>
 
 <footer>
-    <p style="opacity: 0.5;">© 2026 B&K MEATS. ALL RIGHTS RESERVED.</p>
+    <h3 style="color: var(--gold); margin-bottom: 20px;">VISIT OUR SHOP</h3>
+    <p style="font-weight: bold;">4604 MEMORIAL DRIVE, DECATUR, GA 30032</p>
+    <p>404.642.4424 | 404.296.5116</p>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.3262335160844!2d-84.2587005!3d33.7712301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a9e32405a815%3A0xc6c4f877f975489!2s4604%20Memorial%20Dr%2C%20Decatur%2C%20GA%2030032!5e0!3m2!1sen!2sus!4v1709848030256!5m2!1sen!2sus" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <p style="margin-top: 30px; opacity: 0.5;">© 2026 B&K MEATS. ALL RIGHTS RESERVED.</p>
 </footer>
 
 <a href="tel:4046424424" class="call-btn">📞 CALL SHOP</a>
